@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+      <div >
+          
+          <div style="padding-left: 30px;">{{ content }}</div>
+      </div>
+
+
+      <script>
+       
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                  console.log("scroll")
+                document.getElementsByClassName("navlink").style.display = none;
+              } else {
+                document.getElementsByClassName("navlink").style.display= none;
+              }
+              prevScrollpos = currentScrollPos;
+            }
+     </script>
+  </body>
+</html>

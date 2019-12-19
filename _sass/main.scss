@@ -1,0 +1,70 @@
+body {
+   padding:40px;
+   margin: 0%;
+}
+
+.current {
+    color: green;
+    font-weight: bold;
+    
+  }
+
+.navlink {
+
+    display: block;
+    word-spacing: 10px;
+    position: absolute;
+    right: 80px;
+    text-decoration: none;  
+    font-family: Arial, Helvetica, sans-serif;
+    .eachnavHome {
+        text-decoration: none;  
+        position: fixed;
+        right:200px;
+    }
+    .eachnavHome:hover{
+        text-decoration: none;  
+        font-size: 20px;
+        margin-top: -3px;
+        
+    }
+    .eachnavResume {
+        text-decoration: none;  
+        position: fixed;
+        right: 40px;
+    }
+    .eachnavResume:hover {
+        text-decoration: none;  
+        font-size: 20px;
+        margin-top: -3px;
+    }
+    .eachnavAbout {
+        text-decoration: none;  
+        right: 130px;
+        position:fixed;
+    }
+    .eachnavAbout:hover {
+        text-decoration: none;  
+        font-size: 20px;
+        margin-top: -3px;
+    }
+    
+}
+
+
+.name {
+    color:#6f777d;
+    display:block;
+    margin: 0 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    position: fixed;
+    left: 50px;
+}
+
+.myImage {
+    padding: 80px 0px 0px 0px;
+    width: 1200px;
+    height: 2000px;
+}
