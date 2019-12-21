@@ -3,10 +3,39 @@ layout: default
 title: Home
 ---
 
-<a href="/" class="name">Chawan Dinesh</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>{{ page.title }}</title>
+  </head>
+  <body class="myDiv" onscroll="myFunction()">
+    <div>
+      <a href="/" class="name">Chawan Dinesh</a>
 
-{% include navigation.html %}
+      {% include navigation.html %}
+      <img
+        class="myImage"
+        src="https://images.unsplash.com/photo-1499084732479-de2c02d45fcc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+      />
+    </div>
 
-<img  class="myImage" src="https://ak2.picdn.net/shutterstock/videos/1011553292/thumb/12.jpg">
-
-
+    <script>
+      window.onscroll = function(e) {
+        console.log(window.scrollY); // Value of scroll Y in px
+        var y = window.scrollY;
+        var name = document.getElementsByClassName("name");
+        var nav = document.getElementsByClassName("navlink");
+        if (y == 0) {
+          name[0].style.display = "block";
+          nav[0].style.display = "block";
+        } else {
+          name[0].style.display = "none";
+          nav[0].style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
