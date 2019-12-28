@@ -1,69 +1,85 @@
 body {
-  padding: 40px;
-  margin: 0%;
+  padding: 0px;
+  margin: 0 auto;
 }
 
-.current {
-  color: green;
-  font-weight: bold;
+.header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  border-bottom: 1px solid #f2f3f3;
 }
 
-.navlink {
-  display: block;
-  word-spacing: 10px;
-  position: absolute;
-  right: 80px;
+.navbar {
+  word-spacing: 40px;
+  right: 120px;
+  position: relative;
+}
+
+.namelink,
+.Projects,
+.About,
+.Resume {
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  .eachnavHome {
-    text-decoration: none;
-    position: fixed;
-    right: 200px;
-  }
-  .eachnavHome:hover {
-    text-decoration: none;
-    font-size: 20px;
-    margin-top: -3px;
-    margin-right: -5px;
-  }
-  .eachnavResume {
-    text-decoration: none;
-    position: fixed;
-    right: 40px;
-  }
-  .eachnavResume:hover {
-    text-decoration: none;
-    font-size: 20px;
-    margin-top: -3px;
-    margin-right: -5px;
-  }
-  .eachnavAbout {
-    text-decoration: none;
-    right: 130px;
-    position: fixed;
-  }
-  .eachnavAbout:hover {
-    text-decoration: none;
-    font-size: 20px;
-    margin-top: -3px;
-    margin-right: -5px;
-  }
-}
-
-.name {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
+    'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
   color: #6f777d;
-  display: block;
-  margin: 0 1rem;
+}
+
+.namelink {
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  position: fixed;
-  left: 50px;
+  font-size: 22px;
+  left: 90px;
+  position: relative;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: table;
+  text-align: center;
+}
+
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+
+ul > li > a {
+  text-decoration: none;
+  letter-spacing: 0.05em;
+
+  display: inline-block;
+  padding: 5px 20px;
+  position: relative;
+}
+
+ul > li > a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  background: #6f777d;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+ul > li > a:hover:after {
+  width: 70%;
+  left: 19px;
 }
 
 .myImage {
-  padding: 50px 0px 0px 0px;
-  width: 100%;
-  height: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  border: none;
+  display: block;
 }

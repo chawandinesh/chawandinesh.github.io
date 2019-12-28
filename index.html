@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Chawan Dinesh
 ---
 
 <!DOCTYPE html>
@@ -11,31 +11,10 @@ title: Home
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <title>{{ page.title }}</title>
   </head>
-  <body class="myDiv" onscroll="myFunction()">
-    <div>
-      <a href="/" class="name">Chawan Dinesh</a>
+  {% include header.html %}
 
-      {% include navigation.html %}
-      <img
-        class="myImage"
-        src="https://images.unsplash.com/photo-1499084732479-de2c02d45fcc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-      />
-    </div>
-
-    <script>
-      window.onscroll = function(e) {
-        console.log(window.scrollY); // Value of scroll Y in px
-        var y = window.scrollY;
-        var name = document.getElementsByClassName("name");
-        var nav = document.getElementsByClassName("navlink");
-        if (y == 0) {
-          name[0].style.display = "block";
-          nav[0].style.display = "block";
-        } else {
-          name[0].style.display = "none";
-          nav[0].style.display = "none";
-        }
-      };
-    </script>
-  </body>
+  <img
+    class="myImage"
+    src="assets/images/benjamin-davies-9b5dvrjb05g-unsplash.jpg"
+  />
 </html>

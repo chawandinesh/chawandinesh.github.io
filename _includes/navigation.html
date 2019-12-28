@@ -1,5 +1,17 @@
-<nav class="navlink">
-    {% for item in site.data.navigation %}
-        <a  class="eachnav{{item.name}}" href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-    {% endfor %}
-</nav>
+<ul>
+  <li>
+    <a class="Projects" href="/">
+      Projects
+    </a>
+  </li>
+  <li>
+    <a class="Resume" href="/Resume.html">
+      Resume
+    </a>
+  </li>
+  <li>
+    <a class="About" href="/about.html">
+      About
+    </a>
+  </li>
+</ul>
