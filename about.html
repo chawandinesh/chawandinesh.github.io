@@ -13,7 +13,18 @@ title: About
     <title>Document</title>
   </head>
   <body>
-    {% include header.html %} # About page This page tells you a little bit
-    about me.
+    {% include header.html %}
+    <div class="aboutHeader"><h2>About page</h2></div>
+    <div class="aboutpage">
+      {% include myprofile.html %}
+      <div class="abouttitle">
+        <p>
+          Graduated in 2019 , Working as Full Stack Developer at 314e
+          Corporation.
+        </p>
+      </div>
+    </div>
+
+    {% include footer.html %}
   </body>
 </html>
