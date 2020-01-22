@@ -8,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 90px;
+  height: 80px;
   border-bottom: 1px solid #f2f3f3;
 }
 
@@ -32,7 +32,7 @@ body {
 .namelink {
   font-weight: bold;
   font-size: 22px;
-  left: 90px;
+  left: 85px;
   position: relative;
   text-decoration: none;
 }
@@ -185,6 +185,83 @@ ul>li>a:hover:after {
   .navbar {
     display: none;
   }
+
+
+
+
+
+  .fa-1x {
+    font-size: 1.5rem;
+  }
+
+  .navbar-toggler.toggler-example {
+    cursor: pointer;
+    // color: red;
+    background-color: blue;
+    left: -50px;
+    height: 20px;
+    position: relative;
+  }
+
+  .navbar-toggler.toggler-example collapsed {
+    cursor: pointer;
+    // color: red;
+    background-color: blue;
+    left: -50px;
+    height: 20px;
+    position: relative;
+  }
+
+  .dark-blue-text {
+    color: #0A38F5;
+  }
+
+  .dark-pink-text {
+    color: #AC003A;
+  }
+
+  .dark-amber-text {
+    color: #ff6f00;
+  }
+
+  .dark-teal-text {
+    color: #004d40;
+  }
+
+  .navbar-collapse {
+    margin-top: 250px;
+    left: -48px;
+    position: relative;
+  }
+
+  .navbar-nav mr-auto {
+    line-height: 2px;
+
+  }
+
+  .navbar-toggler.toggler-example {
+    cursor: pointer;
+    background-color: blue;
+    left: 14px;
+    height: 20px;
+    position: relative;
+  }
+
+  .navbar-toggler.toggler-example collapsed {
+    cursor: pointer;
+    background-color: blue;
+    left: 232px;
+    height: 20px;
+    position: relative;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: -1px;
+
+  }
+
+
 }
 
 @media only screen and (max-width: 1070px) {
@@ -192,3 +269,16 @@ ul>li>a:hover:after {
     display: none;
   }
 }
+
+
+
+
+
+
+
+// ul>li>a:hover:after {
+//   width: 10%;
+//   left: 31px;
+//   left: 410px;
+//   position: relative;
+// }
