@@ -49,7 +49,7 @@ li {
   padding: 15px 0;
 }
 
-ul > li > a {
+ul>li>a {
   text-decoration: none;
   letter-spacing: 0.05em;
 
@@ -58,7 +58,7 @@ ul > li > a {
   position: relative;
 }
 
-ul > li > a:after {
+ul>li>a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: '';
@@ -71,7 +71,7 @@ ul > li > a:after {
   width: 0;
 }
 
-ul > li > a:hover:after {
+ul>li>a:hover:after {
   width: 70%;
   left: 19px;
 }
@@ -105,6 +105,7 @@ ul > li > a:hover:after {
 .myprofile {
   position: relative;
   left: 80px;
+
   .name {
     font-weight: bold;
     color: #737b83;
@@ -112,6 +113,7 @@ ul > li > a:hover:after {
       'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
     font-size: 21px;
   }
+
   .profession,
   .location,
   .github,
@@ -122,6 +124,7 @@ ul > li > a:hover:after {
     font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
       'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
   }
+
   .emaillink,
   .githublink,
   .linkedinlink {
@@ -130,6 +133,7 @@ ul > li > a:hover:after {
     left: 5px;
     position: relative;
   }
+
   .emaillink:hover,
   .githublink:hover,
   .linkedinlink:hover {
@@ -174,4 +178,17 @@ ul > li > a:hover:after {
   justify-content: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
     'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+}
+
+
+@media only screen and (max-width: 720px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .myprofile {
+    display: none;
+  }
 }
