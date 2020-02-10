@@ -30,18 +30,17 @@ body {
 .Resume {
   text-decoration: none;
   font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
-    'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+    "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   color: #6f777d;
 }
 
 .namelink:hover {
   text-decoration: none;
   font-size: 22px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
-    'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+    "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   color: #6f777d;
-
 }
 
 .Projects:hover,
@@ -49,8 +48,8 @@ body {
 .Resume:hover {
   text-decoration: none;
   font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
-    'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+    "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   color: #6f777d;
 }
 
@@ -74,7 +73,7 @@ li {
   padding: 15px 0;
 }
 
-ul>li>a {
+ul > li > a {
   text-decoration: none;
   letter-spacing: 0.05em;
 
@@ -83,10 +82,10 @@ ul>li>a {
   position: relative;
 }
 
-ul>li>a:after {
+ul > li > a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
-  content: '';
+  content: "";
   display: block;
   height: 4px;
   left: 50%;
@@ -96,14 +95,14 @@ ul>li>a:after {
   width: 0;
 }
 
-ul>li>a:hover:after {
+ul > li > a:hover:after {
   width: 70%;
   left: 19px;
 }
 
 a:hover {
   text-decoration: none;
-  color: #6f777d
+  color: #6f777d;
 }
 
 .myImage {
@@ -139,8 +138,8 @@ a:hover {
   .name {
     font-weight: bold;
     color: #737b83;
-    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
-      'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+      "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
     font-size: 21px;
   }
 
@@ -151,8 +150,8 @@ a:hover {
   .linkedin {
     padding-top: 15px;
     color: #6f777d;
-    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
-      'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+      "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   }
 
   .emaillink,
@@ -177,20 +176,13 @@ a:hover {
 .resumeHeader {
   display: flex;
   justify-content: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
-    'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+    "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 }
 
 .myprofileandresume {
   display: flex;
 }
-
-// .resumepdf {
-//   margin: 0 auto;
-//   position: relative;
-//   width: 600px;
-//   height: 600px;
-// }
 
 .aboutpage {
   display: flex;
@@ -198,19 +190,18 @@ a:hover {
 
 .abouttitle {
   margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
-    'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+    "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 }
 
 .aboutHeader {
   display: flex;
   justify-content: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
-    'Helvetica Neue', 'Lucida Grande', Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+    "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 }
 
-
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 790px) {
   .navbardisplay {
     display: none;
   }
@@ -230,10 +221,25 @@ a:hover {
     width: 100%;
     height: 500px;
   }
-}
-
-@media only screen and (max-width: 1070px) {
   .myprofile {
     display: none;
+  }
+  .resumepdf {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 790px) {
+  // .myprofile {
+  //   display: none;
+  // }
+  .resumepdf {
+    margin: 0 auto;
+    width: 60%;
+  }
+  .aboutpage {
+    height: 500px;
+    padding-top: 20px;
   }
 }
