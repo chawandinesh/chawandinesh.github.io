@@ -118,9 +118,12 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100px;
+  height: 75px;
   background-color: #f2f3f3;
   margin-top: 80px;
+  // position: absolute;
+  // bottom: 0px;
+  // width: 100%;
 }
 
 .myProfileImage {
@@ -226,7 +229,35 @@ a:hover {
   }
   .resumepdf {
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
+  }
+  .dropdown-menu {
+    min-width: 100px !important;
+  }
+  .aboutPageTitle {
+    font-size: 22px;
+  }
+  .aboutDescription {
+    margin: 0 auto;
+    width: 50%;
+    top: 30px;
+    position: relative;
+    height: 400px;
+  }
+  .resumeTitle {
+    font-size: 22px;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75px;
+    background-color: #f2f3f3;
+    margin-top: 80px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
   }
 }
 
@@ -241,5 +272,8 @@ a:hover {
   .aboutpage {
     height: 500px;
     padding-top: 20px;
+  }
+  .dropdown {
+    display: none;
   }
 }
