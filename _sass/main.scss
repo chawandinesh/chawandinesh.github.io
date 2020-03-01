@@ -73,7 +73,7 @@ li {
   padding: 15px 0;
 }
 
-ul > li > a {
+ul>li>a {
   text-decoration: none;
   letter-spacing: 0.05em;
 
@@ -82,7 +82,7 @@ ul > li > a {
   position: relative;
 }
 
-ul > li > a:after {
+ul>li>a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -95,7 +95,7 @@ ul > li > a:after {
   width: 0;
 }
 
-ul > li > a:hover:after {
+ul>li>a:hover:after {
   width: 70%;
   left: 19px;
 }
@@ -224,19 +224,24 @@ a:hover {
     width: 100%;
     height: 500px;
   }
+
   .myprofile {
     display: none;
   }
+
   .resumepdf {
     margin: 0 auto;
     width: 80%;
   }
+
   .dropdown-menu {
     min-width: 100px !important;
   }
+
   .aboutPageTitle {
     font-size: 22px;
   }
+
   .aboutDescription {
     margin: 0 auto;
     width: 50%;
@@ -244,9 +249,11 @@ a:hover {
     position: relative;
     height: 400px;
   }
+
   .resumeTitle {
     font-size: 22px;
   }
+
   .footer {
     display: flex;
     justify-content: center;
@@ -259,26 +266,32 @@ a:hover {
     bottom: 0px;
     width: 100%;
   }
+
   .hi .myprofile {
     display: block;
   }
+
   .aboutDescription {
     display: none;
   }
 }
 
 @media only screen and (min-width: 790px) {
+
   // .myprofile {
   //   display: none;
   // }
   .resumepdf {
     margin: 0 auto;
     width: 60%;
+    height: 500px;
   }
+
   .aboutpage {
     height: 500px;
     padding-top: 20px;
   }
+
   .dropdown {
     display: none;
   }
