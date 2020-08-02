@@ -66,6 +66,13 @@
     position: relative;
     display: none;
   }
+
+  .nameHeader {
+    font-size: 20px;
+    position: relative;
+    left: 40px;
+    color: white;
+  }
 }
 
 body a {
