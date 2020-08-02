@@ -51,8 +51,8 @@
               </div>
               <div className="navLinks">
                 <ReactRouterDOM.BrowserRouter>
-                  <Link to="/resume">Resume</Link> &nbsp;&nbsp;
-                  <Link to="/about">About</Link> &nbsp;&nbsp;
+                  <Link to="/resumes">Resume</Link> &nbsp;&nbsp;
+                  <Link to="/abouts">About</Link> &nbsp;&nbsp;
                   <Link exact to="/">
                     Home
                   </Link>{" "}
@@ -73,8 +73,8 @@
                 <ReactRouterDOM.BrowserRouter
                   history={ReactRouterDOM.browserHistory}
                 >
-                  <Route path="/resume" component={Resume} />
-                  <Route path="/about" component={About} />
+                  <Route path="/resumes" component={Resume} />
+                  <Route path="/abouts" component={About} />
                   <Route path="/" exact component={Home} />
                 </ReactRouterDOM.BrowserRouter>
               </div>
