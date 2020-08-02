@@ -50,9 +50,12 @@
               </div>
               <div className="navLinks">
                 <ReactRouterDOM.HashRouter>
-                  <Link to="/">Home</Link> &nbsp;&nbsp;
                   <Link to="/resume">Resume</Link> &nbsp;&nbsp;
                   <Link to="/about">About</Link> &nbsp;&nbsp;
+                  <Link exact to="/">
+                    Home
+                  </Link>{" "}
+                  &nbsp;&nbsp;
                 </ReactRouterDOM.HashRouter>
               </div>
             </div>
