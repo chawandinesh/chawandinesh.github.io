@@ -20,7 +20,7 @@
     ></script>
     <script src="https://unpkg.com/react@16.3.1/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/react-router@5.0.0/umd/react-router.min.js"></script>
+    <script src="https://unpkg.com/react-router@3.0.0/umd/ReactRouter.js"></script>
     <script src="https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
     <link
@@ -28,7 +28,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.3.5/antd.css"
     />
 
-    <title>AJAY</title>
+    <title>Dinesh Chawan</title>
   </head>
   <body>
     <div id="root"></div>
@@ -36,7 +36,6 @@
       const Link = ReactRouterDOM.Link;
       const Route = ReactRouterDOM.Route;
       const Redirect = ReactRouterDOM.Redirect;
-      const Router = ReactRouterDOM.Router;
 
       const Home = (props) => <h1>Home</h1>;
       const Resume = (props) => <h1>Resume</h1>;
@@ -47,41 +46,32 @@
             <div className="header">
               {" "}
               <div>
-                <span className="nameHeader">Ajay Kadam</span>
+                <span className="nameHeader">Chawan Dinesh</span>
               </div>
               <div className="navLinks">
-                <ReactRouterDOM.BrowserRouter>
-                  <Link to="/resumes">Resume</Link> &nbsp;&nbsp;
-                  <Link to="/abouts">About</Link> &nbsp;&nbsp;
+                <ReactRouterDOM.HashRouter>
+                  <Link to="/resume">Resume</Link> &nbsp;&nbsp;
+                  <Link to="/about">About</Link> &nbsp;&nbsp;
                   <Link exact to="/">
                     Home
                   </Link>{" "}
                   &nbsp;&nbsp;
-                </ReactRouterDOM.BrowserRouter>
+                </ReactRouterDOM.HashRouter>
               </div>
             </div>
 
             <div className="sideBody">
-              <div className="sidebar">
-                <img
-                  className="profileImage"
-                  src="assets/panda.png"
-                  alt="not exist"
-                />
-              </div>
               <div className="bodywrap">
-                <ReactRouterDOM.BrowserRouter
-                  history={ReactRouterDOM.browserHistory}
-                >
-                  <Route path="/resumes" component={Resume} />
-                  <Route path="/abouts" component={About} />
+                <ReactRouterDOM.HashRouter>
+                  <Route path="/resume" component={Resume} />
+                  <Route path="/about" component={About} />
                   <Route path="/" exact component={Home} />
-                </ReactRouterDOM.BrowserRouter>
+                </ReactRouterDOM.HashRouter>
               </div>
             </div>
             <div className="footer">
               {" "}
-              <span className="footerText">@2019 Ajay Kadam </span>
+              <span className="footerText">@2020 Chawan Dinesh </span>
             </div>
           </div>
         );

@@ -7,7 +7,6 @@
 }
 
 .nameHeader {
-  top: 10px;
   font-size: 35px;
   position: relative;
   left: 40px;
@@ -19,11 +18,11 @@
 }
 
 .header {
-  height: 75px;
+  height: 60px;
   background-color: #293745;
   color: whitesmoke;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
   justify-content: space-between;
@@ -32,7 +31,6 @@
   position: relative;
   right: 50px;
   font-size: 20px;
-  top: 20px;
 }
 
 .sideBody {
@@ -41,23 +39,10 @@
   display: flex;
 }
 
-.sidebar {
-  background-color: #33465a;
-  position: relative;
-  width: 18%;
-}
-
-.profileImage {
-  height: 120px;
-  border-radius: 60px;
-  top: 40px;
-  position: relative;
-}
-
 .bodywrap {
   background-color: rgb(230, 230, 230);
   position: relative;
-  width: 82%;
+  width: 100%;
 }
 
 .footer {
@@ -76,17 +61,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .profileImage {
-    height: 60px;
-  }
-  .nameHeader {
-    font-size: 20px;
-    top: 22px;
-    left: 13px;
-  }
   .navLinks {
     right: -3px;
     position: relative;
+    display: none;
   }
 }
 
