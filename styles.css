@@ -113,7 +113,17 @@ a.emaillink {
   font-size: 50px;
 }
 
+.homeContainer {
+  background-color: #111;
+  color: rgb(240, 212, 212);
+  height: 90vh;
+}
 @media only screen and (max-width: 600px) {
+  .homeContainer {
+    background-color: #111;
+    color: rgb(240, 212, 212);
+    height: 90vh;
+  }
   .navLinks {
     display: none;
   }
@@ -133,8 +143,9 @@ a.emaillink {
   }
 
   .myProfileImage {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
+    margin: 20px;
   }
   .homeImage {
     margin-top: 50px;
@@ -146,13 +157,17 @@ a.emaillink {
   }
   .profession {
     font-size: 10px;
+    padding: 5px;
   }
   .location {
     font-size: 10px;
+    padding: 5px;
   }
   .quote {
     top: 100px;
+    top: 30vh;
     font-size: 30px;
+    padding: 30px;
   }
 
   body a {
@@ -161,14 +176,17 @@ a.emaillink {
   .github {
     font-size: 10px;
     color: black;
+    padding: 5px;
   }
   .email {
     font-size: 10px;
     color: black;
+    padding: 5px;
   }
   .linkedin {
     font-size: 10px;
     color: black;
+    padding: 5px;
   }
 }
 
