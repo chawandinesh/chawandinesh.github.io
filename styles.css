@@ -62,16 +62,11 @@
 
 @media only screen and (max-width: 600px) {
   .navLinks {
-    right: -3px;
-    position: relative;
     display: none;
   }
 
   .nameHeader {
     font-size: 20px;
-    position: relative;
-    left: 40px;
-    color: white;
   }
 }
 
