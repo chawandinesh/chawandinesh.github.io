@@ -36,6 +36,7 @@
       const Link = ReactRouterDOM.Link;
       const Route = ReactRouterDOM.Route;
       const Redirect = ReactRouterDOM.Redirect;
+      document.location.href = String(document.location.href).replace(/#/, "");
 
       const Home = (props) => <h1>Home</h1>;
       const Resume = (props) => <h1>Resume</h1>;
