@@ -64,6 +64,12 @@
   display: none;
 }
 
+.myProfileImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 400px;
+}
+
 @media only screen and (max-width: 600px) {
   .navLinks {
     display: none;
@@ -81,6 +87,11 @@
   .resume {
     width: "50px";
     height: "50vh";
+  }
+
+  .myProfileImage {
+    width: 100px;
+    height: 100px;
   }
 }
 
