@@ -103,7 +103,18 @@
       const Home = (props) => (
         // <div>Home</div>
         <div>
-          <div> Home</div>
+          <div
+            style={{
+              backgroundColor: "#111",
+              color: "white",
+              height: "100vh",
+            }}
+          >
+            <img
+              style={{ position: "relative", top: "100px" }}
+              src="./assets/images/reactIcon.png"
+            />
+          </div>
           <div id="mySidenav" className="sidenav">
             <a
               href="javascript:void(0)"
@@ -122,7 +133,13 @@
       );
       const Resume = (props) => (
         <div>
-          <div> Resume</div>
+          <div className="resume">
+            <iframe
+              src="assets/others/Resume_dinesh4_.pdf"
+              style={{ width: "100%", height: "100vh", border: "none" }}
+            ></iframe>
+          </div>
+
           <div id="mySidenav" className="sidenav">
             <a
               href="javascript:void(0)"
@@ -139,9 +156,20 @@
           </div>
         </div>
       );
+
       const About = (props) => (
         <div>
-          <div> About</div>
+          <div className="myprofile">
+            <img
+              className="myProfileImage"
+              src="https://avatars0.githubusercontent.com/u/42429566?s=460&v=4"
+              alt=""
+            />
+            <div>
+              <h2> About Title </h2>
+            </div>
+          </div>
+
           <div id="mySidenav" className="sidenav">
             <a
               href="javascript:void(0)"
