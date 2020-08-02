@@ -29,6 +29,11 @@
     ></script>
 
     <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.3.5/antd.css"
     />
@@ -101,7 +106,6 @@
       }
 
       const Home = (props) => (
-        // <div>Home</div>
         <div>
           <div
             style={{
@@ -110,8 +114,9 @@
               height: "100vh",
             }}
           >
-            <img className="homeImage" src="./assets/images/iconReact.png" />
+            <h4 className="quote">Don't let anyone say you can't do it</h4>
           </div>
+
           <div id="mySidenav" className="sidenav">
             <a
               href="javascript:void(0)"
@@ -164,7 +169,58 @@
               alt=""
             />
             <div>
-              <h2> About Title </h2>
+              <div className="name">Chawan Dinesh</div>
+              <div className="profession">Software Engineer.</div>
+              <div className="location">
+                <img
+                  height="15px"
+                  width="15px"
+                  src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_location_on_48px-512.png"
+                />
+                &nbsp; Hyderabad.
+              </div>
+              <div className="github">
+                <img
+                  style={{ height: "15px", width: "15px" }}
+                  src="https://image.flaticon.com/icons/png/512/25/25231.png"
+                  alt=""
+                />
+                &nbsp;
+                <a
+                  className="githublink"
+                  href="https://github.com/chawandinesh"
+                >
+                  {" "}
+                  Github
+                </a>
+              </div>
+
+              <div className="email">
+                <img
+                  style={{ height: "15px", width: "15px" }}
+                  src="https://cdn1.iconfinder.com/data/icons/cv-resume-1/32/3-512.png"
+                  alt=""
+                />{" "}
+                &nbsp;
+                <a className="emaillink" href="mailto:chavandinesh53@gmail.com">
+                  Email
+                </a>
+              </div>
+
+              <div className="linkedin">
+                <img
+                  style={{ height: "15px", width: "15px" }}
+                  src="https://image.flaticon.com/icons/png/512/174/174857.png"
+                  alt=""
+                />
+                &nbsp;
+                <a
+                  className="linkedinlink"
+                  href="https://www.linkedin.com/in/chawan-dinesh-2879a714a/"
+                >
+                  LinkedIn
+                </a>
+              </div>
             </div>
           </div>
 

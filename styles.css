@@ -70,8 +70,47 @@
   border-radius: 400px;
 }
 
+.name {
+  font-size: 40px;
+}
+
 .homeImage {
-  margin-top: 50px;
+  margin-top: 130px;
+}
+
+.profession {
+  font-size: 20px;
+}
+.location {
+  font-size: 20px;
+}
+
+.github {
+  font-size: 20px;
+  color: black;
+}
+.email {
+  font-size: 20px;
+}
+.linkedin {
+  font-size: 20px;
+}
+a.githublink {
+  color: rgba(0, 0, 0, 0.65);
+}
+a.linkedinlink {
+  color: rgba(0, 0, 0, 0.65);
+}
+a.emaillink {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.quote {
+  color: white;
+  font-family: Dancing Script, cursive;
+  position: relative;
+  top: 160px;
+  font-size: 50px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -98,8 +137,38 @@
     height: 100px;
   }
   .homeImage {
-    width: 50px;
-    height: 50px;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .profession {
+    font-size: 10px;
+  }
+  .location {
+    font-size: 10px;
+  }
+  .quote {
+    top: 100px;
+    font-size: 30px;
+  }
+
+  body a {
+    color: rgba(0, 0, 0, 0.65);
+  }
+  .github {
+    font-size: 10px;
+    color: black;
+  }
+  .email {
+    font-size: 10px;
+    color: black;
+  }
+  .linkedin {
+    font-size: 10px;
+    color: black;
   }
 }
 
