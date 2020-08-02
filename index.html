@@ -36,6 +36,7 @@
       const Link = ReactRouterDOM.Link;
       const Route = ReactRouterDOM.Route;
       const Redirect = ReactRouterDOM.Redirect;
+      const Router = ReactRouterDOM.Router;
 
       const Home = (props) => <h1>Home</h1>;
       const Resume = (props) => <h1>Resume</h1>;
@@ -49,14 +50,14 @@
                 <span className="nameHeader">Ajay Kadam</span>
               </div>
               <div className="navLinks">
-                <ReactRouterDOM.HashRouter>
+                <ReactRouterDOM.BrowserRouter>
                   <Link to="/resume">Resume</Link> &nbsp;&nbsp;
                   <Link to="/about">About</Link> &nbsp;&nbsp;
                   <Link exact to="/">
                     Home
                   </Link>{" "}
                   &nbsp;&nbsp;
-                </ReactRouterDOM.HashRouter>
+                </ReactRouterDOM.BrowserRouter>
               </div>
             </div>
 
@@ -69,11 +70,13 @@
                 />
               </div>
               <div className="bodywrap">
-                <ReactRouterDOM.HashRouter>
+                <ReactRouterDOM.BrowserRouter
+                  history={ReactRouterDOM.browserHistory}
+                >
                   <Route path="/resume" component={Resume} />
                   <Route path="/about" component={About} />
                   <Route path="/" exact component={Home} />
-                </ReactRouterDOM.HashRouter>
+                </ReactRouterDOM.BrowserRouter>
               </div>
             </div>
             <div className="footer">
