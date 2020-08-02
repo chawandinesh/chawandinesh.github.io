@@ -1,83 +1,53 @@
+--- layout: default title: Chawan Dinesh ---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="icon" type="image/png" href="assets/favicon_AJ.png" />
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"
-    ></script>
-    <script src="https://unpkg.com/react@16.3.1/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/react-router@3.0.0/umd/ReactRouter.js"></script>
-    <script src="https://unpkg.com/react-router-dom@5.0.0/umd/react-router-dom.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/antd/4.3.5/antd.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
 
-    <title>Dinesh Chawan</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="text/babel">
-      const Link = ReactRouterDOM.Link;
-      const Route = ReactRouterDOM.Route;
-      const Redirect = ReactRouterDOM.Redirect;
-
-      const Home = (props) => <h1>Home</h1>;
-      const Resume = (props) => <h1>Resume</h1>;
-      const About = (props) => <h1>About</h1>;
-      function App() {
-        return (
-          <div className="container">
-            <div className="header">
-              {" "}
-              <div>
-                <span className="nameHeader">Chawan Dinesh</span>
-              </div>
-              <div className="navLinks">
-                <ReactRouterDOM.HashRouter>
-                  <Link to="/resume">Resume</Link> &nbsp;&nbsp;
-                  <Link to="/about">About</Link> &nbsp;&nbsp;
-                  <Link exact to="/">
-                    Home
-                  </Link>{" "}
-                  &nbsp;&nbsp;
-                </ReactRouterDOM.HashRouter>
-              </div>
-            </div>
-
-            <div className="sideBody">
-              <div className="bodywrap">
-                <ReactRouterDOM.HashRouter>
-                  <Route path="/resume" component={Resume} />
-                  <Route path="/about" component={About} />
-                  <Route path="/" exact component={Home} />
-                </ReactRouterDOM.HashRouter>
-              </div>
-            </div>
-            <div className="footer">
-              {" "}
-              <span className="footerText">@2020 Chawan Dinesh </span>
-            </div>
-          </div>
-        );
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-160368049-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
+      gtag("js", new Date());
 
-      ReactDOM.render(<App />, document.getElementById("root"));
+      gtag("config", "UA-160368049-1");
     </script>
-  </body>
+
+    <title>{{ page.title }}</title>
+  </head>
+  {% include header.html %}
+
+  <img class="myImage" src="assets/images/myBackground.jpg" />
+
+  {% include footer.html %}
 </html>
